@@ -15,7 +15,6 @@ const alpaca = new Alpaca({
   paper: true,
 });
 
-// Get daily price data for AAPL over the last 5 trading days.
 const barset = alpaca
   .getBars(config.time, config.symbols, {
     limit: 1000,
